@@ -11,3 +11,5 @@ closebutton.addEventListener("click", () => {
     content.style.width = "0px"
     content.style.padding = "0px"
 })
+
+console.log(button, closebutton, content)

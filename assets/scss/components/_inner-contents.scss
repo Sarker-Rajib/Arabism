@@ -22,6 +22,10 @@
             position: relative;
             background: #FDEBBC;
 
+            @media(max-width: 545px) {
+                width: 150px;
+            }
+
             input {
                 background: #FDEBBC;
                 border-radius: 6px;

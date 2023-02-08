@@ -17,9 +17,13 @@
 </head>
 
 <body>
-
   <div class="d-flex">
-    <aside class="side-nav">
+    <aside class="side-nav" id="sideNav">
+      <div class="text-end d-lg-none">
+        <button id="closeButton" class="btn side-menu-button me-1">
+          Close
+        </button>
+      </div>
       <img class="img-fluid brand-image" src="assets/images/logo.png" alt="brand">
 
       <div class="navigation">
@@ -60,7 +64,8 @@
         <a class="nav-links" href="#"><span><i class="fas fa-chevron-right"></i></span>Operator</a>
         <a class="nav-links" href="#"><span><i class="fas fa-user"></i></span>Users</a>
         <a class="nav-links" href="#"><span><i class="fas fa-users"></i></span>Customer</a>
-        <a class="nav-links active" href="#"><span><i class="far fa-cube"></i></span>Products</a>
+        <a class="nav-links" href="#"><span><i class="far fa-cube"></i></span>Products</a>
+        <a class="nav-links active" href="#"><span><i class="far fa-cube"></i></span>Category</a>
       </div>
     </aside>
 
@@ -107,245 +112,238 @@
         </div>
 
         <div class="user-table">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Created</th>
-                <th>Status</th>
-                <th>Category</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody class="table-body">
-
-              <tr>
-                <td class="d-flex align-items-center">
-                  <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
-                  <span class="name">Name of product</span>
-                </td>
-                <td>
-                  <p class="date">01/05/2022</p>
-                </td>
-                <td>
-                  <select class="select-opt" name="" id="">
-                    <option value="">Active</option>
-                    <option value="">Active</option>
-                  </select>
-                </td>
-                <td>
-                  <p class="email">
-                    Name of Category
-                  </p>
-                </td>
-                <td>
-                  <button class="btn button-blue">
-                    Edit
-                  </button>
-                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Remove
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="blank"></td>
-              </tr>
-
-              <tr>
-                <td class="d-flex align-items-center">
-                  <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
-                  <span class="name">Name of product</span>
-                </td>
-                <td>
-                  <p class="date">01/05/2022</p>
-                </td>
-                <td>
-                  <select class="select-opt" name="" id="">
-                    <option value="">Active</option>
-                    <option value="">Active</option>
-                  </select>
-                </td>
-                <td>
-                  <p class="email">
-                    Name of Category
-                  </p>
-                </td>
-                <td>
-                  <button class="btn button-blue">
-                    Edit
-                  </button>
-                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Remove
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="blank"></td>
-              </tr>
-
-              <tr>
-                <td class="d-flex align-items-center">
-                  <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
-                  <span class="name">Name of product</span>
-                </td>
-                <td>
-                  <p class="date">01/05/2022</p>
-                </td>
-                <td>
-                  <select class="select-opt" name="" id="">
-                    <option value="">Active</option>
-                    <option value="">Active</option>
-                  </select>
-                </td>
-                <td>
-                  <p class="email">
-                    Name of Category
-                  </p>
-                </td>
-                <td>
-                  <button class="btn button-blue">
-                    Edit
-                  </button>
-                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Remove
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="blank"></td>
-              </tr>
-
-              <tr>
-                <td class="d-flex align-items-center">
-                  <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
-                  <span class="name">Name of product</span>
-                </td>
-                <td>
-                  <p class="date">01/05/2022</p>
-                </td>
-                <td>
-                  <select class="select-opt" name="" id="">
-                    <option value="">Active</option>
-                    <option value="">Active</option>
-                  </select>
-                </td>
-                <td>
-                  <p class="email">
-                    Name of Category
-                  </p>
-                </td>
-                <td>
-                  <button class="btn button-blue">
-                    Edit
-                  </button>
-                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Remove
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="blank"></td>
-              </tr>
-
-              <tr>
-                <td class="d-flex align-items-center">
-                  <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
-                  <span class="name">Name of product</span>
-                </td>
-                <td>
-                  <p class="date">01/05/2022</p>
-                </td>
-                <td>
-                  <select class="select-opt" name="" id="">
-                    <option value="">Active</option>
-                    <option value="">Active</option>
-                  </select>
-                </td>
-                <td>
-                  <p class="email">
-                    Name of Category
-                  </p>
-                </td>
-                <td>
-                  <button class="btn button-blue">
-                    Edit
-                  </button>
-                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Remove
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="blank"></td>
-              </tr>
-
-              <tr>
-                <td class="d-flex align-items-center">
-                  <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
-                  <span class="name">Name of product</span>
-                </td>
-                <td>
-                  <p class="date">01/05/2022</p>
-                </td>
-                <td>
-                  <select class="select-opt" name="" id="">
-                    <option value="">Active</option>
-                    <option value="">Active</option>
-                  </select>
-                </td>
-                <td>
-                  <p class="email">
-                    Name of Category
-                  </p>
-                </td>
-                <td>
-                  <button class="btn button-blue">
-                    Edit
-                  </button>
-                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Remove
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="blank"></td>
-              </tr>
-
-              <tr>
-                <td class="d-flex align-items-center">
-                  <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
-                  <span class="name">Name of product</span>
-                </td>
-                <td>
-                  <p class="date">01/05/2022</p>
-                </td>
-                <td>
-                  <select class="select-opt" name="" id="">
-                    <option value="">Active</option>
-                    <option value="">Active</option>
-                  </select>
-                </td>
-                <td>
-                  <p class="email">
-                    Name of Category
-                  </p>
-                </td>
-                <td>
-                  <button class="btn button-blue">
-                    Edit
-                  </button>
-                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Remove
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="blank"></td>
-              </tr>
-
-
-            </tbody>
-          </table>
+          <div class="table-responsive-lg">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Created</th>
+                  <th>Status</th>
+                  <th>Category</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr>
+                  <td class="d-flex align-items-center">
+                    <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
+                    <span class="name">Name of product</span>
+                  </td>
+                  <td>
+                    <p class="date">01/05/2022</p>
+                  </td>
+                  <td>
+                    <select class="select-opt">
+                      <option value="">Active</option>
+                      <option value="">Active</option>
+                    </select>
+                  </td>
+                  <td>
+                    <p class="email">
+                      Name of Category
+                    </p>
+                  </td>
+                  <td>
+                    <button class="btn button-blue">
+                      Edit
+                    </button>
+                    <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      Remove
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="blank"></td>
+                </tr>
+                <tr>
+                  <td class="d-flex align-items-center">
+                    <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
+                    <span class="name">Name of product</span>
+                  </td>
+                  <td>
+                    <p class="date">01/05/2022</p>
+                  </td>
+                  <td>
+                    <select class="select-opt">
+                      <option value="">Active</option>
+                      <option value="">Active</option>
+                    </select>
+                  </td>
+                  <td>
+                    <p class="email">
+                      Name of Category
+                    </p>
+                  </td>
+                  <td>
+                    <button class="btn button-blue">
+                      Edit
+                    </button>
+                    <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      Remove
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="blank"></td>
+                </tr>
+                <tr>
+                  <td class="d-flex align-items-center">
+                    <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
+                    <span class="name">Name of product</span>
+                  </td>
+                  <td>
+                    <p class="date">01/05/2022</p>
+                  </td>
+                  <td>
+                    <select class="select-opt">
+                      <option value="">Active</option>
+                      <option value="">Active</option>
+                    </select>
+                  </td>
+                  <td>
+                    <p class="email">
+                      Name of Category
+                    </p>
+                  </td>
+                  <td>
+                    <button class="btn button-blue">
+                      Edit
+                    </button>
+                    <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      Remove
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="blank"></td>
+                </tr>
+                <tr>
+                  <td class="d-flex align-items-center">
+                    <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
+                    <span class="name">Name of product</span>
+                  </td>
+                  <td>
+                    <p class="date">01/05/2022</p>
+                  </td>
+                  <td>
+                    <select class="select-opt">
+                      <option value="">Active</option>
+                      <option value="">Active</option>
+                    </select>
+                  </td>
+                  <td>
+                    <p class="email">
+                      Name of Category
+                    </p>
+                  </td>
+                  <td>
+                    <button class="btn button-blue">
+                      Edit
+                    </button>
+                    <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      Remove
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="blank"></td>
+                </tr>
+                <tr>
+                  <td class="d-flex align-items-center">
+                    <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
+                    <span class="name">Name of product</span>
+                  </td>
+                  <td>
+                    <p class="date">01/05/2022</p>
+                  </td>
+                  <td>
+                    <select class="select-opt">
+                      <option value="">Active</option>
+                      <option value="">Active</option>
+                    </select>
+                  </td>
+                  <td>
+                    <p class="email">
+                      Name of Category
+                    </p>
+                  </td>
+                  <td>
+                    <button class="btn button-blue">
+                      Edit
+                    </button>
+                    <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      Remove
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="blank"></td>
+                </tr>
+                <tr>
+                  <td class="d-flex align-items-center">
+                    <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
+                    <span class="name">Name of product</span>
+                  </td>
+                  <td>
+                    <p class="date">01/05/2022</p>
+                  </td>
+                  <td>
+                    <select class="select-opt">
+                      <option value="">Active</option>
+                      <option value="">Active</option>
+                    </select>
+                  </td>
+                  <td>
+                    <p class="email">
+                      Name of Category
+                    </p>
+                  </td>
+                  <td>
+                    <button class="btn button-blue">
+                      Edit
+                    </button>
+                    <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      Remove
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="blank"></td>
+                </tr>
+                <tr>
+                  <td class="d-flex align-items-center">
+                    <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
+                    <span class="name">Name of product</span>
+                  </td>
+                  <td>
+                    <p class="date">01/05/2022</p>
+                  </td>
+                  <td>
+                    <select class="select-opt">
+                      <option value="">Active</option>
+                      <option value="">Active</option>
+                    </select>
+                  </td>
+                  <td>
+                    <p class="email">
+                      Name of Category
+                    </p>
+                  </td>
+                  <td>
+                    <button class="btn button-blue">
+                      Edit
+                    </button>
+                    <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      Remove
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="blank"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <div class="pagination d-flex justify-content-end pt-3">
@@ -388,7 +386,7 @@
   </div>
 
   <!-- all scripts are starts from here -->
-  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/custom.js"></script>
   <!-- .........script ended............. -->
 </body>

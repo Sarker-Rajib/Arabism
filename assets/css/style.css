@@ -270,6 +270,11 @@ body {
   position: relative;
   background: #FDEBBC;
 }
+@media (max-width: 545px) {
+  .inner-contents .add-user .search-bar {
+    width: 150px;
+  }
+}
 .inner-contents .add-user .search-bar input {
   background: #FDEBBC;
   border-radius: 6px;
