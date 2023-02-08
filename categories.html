@@ -19,7 +19,12 @@
 <body>
 
   <div class="d-flex">
-    <aside class="side-nav">
+    <aside class="side-nav" id="sideNav">
+      <div class="text-end d-lg-none">
+        <button id="closeButton" class="btn side-menu-button me-1">
+          Close
+        </button>
+      </div>
       <img class="img-fluid brand-image" src="assets/images/logo.png" alt="brand">
 
       <div class="navigation">
@@ -62,17 +67,21 @@
         <a class="nav-links" href="#"><span><i class="fas fa-users"></i></span>Customer</a>
         <a class="nav-links" href="#"><span><i class="far fa-cube"></i></span>Products</a>
         <a class="nav-links active" href="#"><span><i class="far fa-cube"></i></span>Category</a>
-
       </div>
     </aside>
 
     <main class="main-content">
       <!-- all codes for ===***top-navbar***=== starts from here -->
       <section class="top-navbar d-flex align-items-center justify-content-between">
-        <form class="search-bar">
-          <input class="form-control" type="text" placeholder="search">
-          <button class="submit-button" type="submit"><i class="far fa-search"></i></button>
-        </form>
+        <div class="d-flex">
+          <button id="menuButton" class="btn side-menu-button me-1 d-lg-none">
+            Menu
+          </button>
+          <form class="search-bar">
+            <input class="form-control" type="text" placeholder="search">
+            <button class="submit-button" type="submit"><i class="far fa-search"></i></button>
+          </form>
+        </div>
 
         <div class="right d-flex align-items-center">
           <span class="me-3 position-relative">
@@ -88,7 +97,6 @@
       <!-- all codes for ===***users***=== starts from here -->
       <section class="inner-contents">
         <p class="breadcrumb">Categories</p>
-
 
         <div class="user-table">
           <table class="table">
@@ -116,7 +124,7 @@
                   <button class="btn button-blue">
                     Edit
                   </button>
-                  <button class="btn button-red">
+                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Remove
                   </button>
                 </td>
@@ -136,7 +144,7 @@
                   <button class="btn button-blue">
                     Edit
                   </button>
-                  <button class="btn button-red">
+                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Remove
                   </button>
                 </td>
@@ -156,7 +164,7 @@
                   <button class="btn button-blue">
                     Edit
                   </button>
-                  <button class="btn button-red">
+                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Remove
                   </button>
                 </td>
@@ -176,7 +184,7 @@
                   <button class="btn button-blue">
                     Edit
                   </button>
-                  <button class="btn button-red">
+                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Remove
                   </button>
                 </td>
@@ -196,7 +204,7 @@
                   <button class="btn button-blue">
                     Edit
                   </button>
-                  <button class="btn button-red">
+                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Remove
                   </button>
                 </td>
@@ -216,7 +224,7 @@
                   <button class="btn button-blue">
                     Edit
                   </button>
-                  <button class="btn button-red">
+                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Remove
                   </button>
                 </td>
@@ -236,7 +244,7 @@
                   <button class="btn button-blue">
                     Edit
                   </button>
-                  <button class="btn button-red">
+                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Remove
                   </button>
                 </td>
@@ -273,7 +281,7 @@
             <div class="modal-body">
               <h4>
                 Are you sure You What to
-                Remove this <span>user</span> ?
+                Remove this <span>Category</span> ?
               </h4>
               <br> <br>
               <div class="text-center">

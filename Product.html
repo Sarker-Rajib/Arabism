@@ -67,10 +67,15 @@
     <main class="main-content">
       <!-- all codes for ===***top-navbar***=== starts from here -->
       <section class="top-navbar d-flex align-items-center justify-content-between">
-        <form class="search-bar">
-          <input class="form-control" type="text" placeholder="search">
-          <button class="submit-button" type="submit"><i class="far fa-search"></i></button>
-        </form>
+        <div class="d-flex">
+          <button id="menuButton" class="btn side-menu-button me-1 d-lg-none">
+            Menu
+          </button>
+          <form class="search-bar">
+            <input class="form-control" type="text" placeholder="search">
+            <button class="submit-button" type="submit"><i class="far fa-search"></i></button>
+          </form>
+        </div>
 
         <div class="right d-flex align-items-center">
           <span class="me-3 position-relative">
@@ -137,7 +142,7 @@
                   <button class="btn button-blue">
                     Edit
                   </button>
-                  <button class="btn button-red">
+                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Remove
                   </button>
                 </td>
@@ -169,7 +174,7 @@
                   <button class="btn button-blue">
                     Edit
                   </button>
-                  <button class="btn button-red">
+                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Remove
                   </button>
                 </td>
@@ -201,7 +206,7 @@
                   <button class="btn button-blue">
                     Edit
                   </button>
-                  <button class="btn button-red">
+                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Remove
                   </button>
                 </td>
@@ -233,7 +238,7 @@
                   <button class="btn button-blue">
                     Edit
                   </button>
-                  <button class="btn button-red">
+                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Remove
                   </button>
                 </td>
@@ -265,7 +270,7 @@
                   <button class="btn button-blue">
                     Edit
                   </button>
-                  <button class="btn button-red">
+                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Remove
                   </button>
                 </td>
@@ -297,7 +302,7 @@
                   <button class="btn button-blue">
                     Edit
                   </button>
-                  <button class="btn button-red">
+                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Remove
                   </button>
                 </td>
@@ -329,7 +334,7 @@
                   <button class="btn button-blue">
                     Edit
                   </button>
-                  <button class="btn button-red">
+                  <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Remove
                   </button>
                 </td>
@@ -337,6 +342,8 @@
               <tr>
                 <td class="blank"></td>
               </tr>
+
+
             </tbody>
           </table>
         </div>
@@ -366,7 +373,7 @@
             <div class="modal-body">
               <h4>
                 Are you sure You What to
-                Remove this <span>user</span> ?
+                Remove this <span>Product</span> ?
               </h4>
               <br> <br>
               <div class="text-center">
