@@ -1,0 +1,44 @@
+.main-content {
+    width: calc(100% - 250px);
+    padding-left: 10px;
+
+    .top-navbar {
+        background: #FFF2D0;
+        margin-bottom: 40px;
+        padding: 16px;
+
+        .search-bar {
+            width: 100%;
+            max-width: 430px;
+            position: relative;
+            background: #FDEBBC;
+
+            input {
+                background: #FDEBBC;
+                border-radius: 6px;
+            }
+
+            .submit-button {
+                position: absolute;
+                top: 50%;
+                transform: translatey(-50%);
+                right: 10px;
+                background: transparent;
+                border: 0;
+            }
+        }
+
+        .right {
+            .bell {
+                font-size: 20px;
+            }
+
+            .dot {
+                position: absolute;
+                top: 0;
+                right: 0px;
+                width: 10px;
+            }
+        }
+    }
+}

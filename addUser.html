@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arabism | Users ADD</title>
+  <link rel='shortcut icon' href='assets/images/log.png' type='image/x-icon'>
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="d-flex">
+    <aside class="side-nav">
+      <img class="img-fluid brand-image" src="assets/images/logo.png" alt="brand">
+
+      <div class="navigation">
+        <a class="nav-links" href="#"><span><i class="fas fa-home"></i></span> Home</a>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Advanced
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body px-0">
+                Content
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <span><i class="fas fa-male"></i></span> Rules
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body px-0">
+                Content
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="nav-links" href="#"><span><i class="fas fa-chevron-right"></i></span>Admin</a>
+        <a class="nav-links" href="#"><span><i class="fas fa-chevron-right"></i></span>Operator</a>
+        <a class="nav-links active" href="#"><span><i class="fas fa-user"></i></span>Users</a>
+        <a class="nav-links" href="#"><span><i class="fas fa-users"></i></span>Customer</a>
+        <a class="nav-links" href="#"><span><i class="far fa-cube"></i></span>Products</a>
+
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <!-- all codes for ===***top-navbar***=== starts from here -->
+      <section class="top-navbar d-flex align-items-center justify-content-between">
+        <form class="search-bar">
+          <input class="form-control" type="text" placeholder="search">
+          <button class="submit-button" type="submit"><i class="far fa-search"></i></button>
+        </form>
+
+        <div class="right d-flex align-items-center">
+          <span class="me-3 position-relative">
+            <i class="bell fal fa-bell me"></i>
+            <img src="assets/images/dot.png" alt="" class="img-fluid dot">
+          </span>
+          <img src="assets/images/Photo.png" alt="avatar">
+        </div>
+      </section>
+      <!-- all codes for ===***top-navbar***=== ended -->
+
+
+      <!-- all codes for ===***users***=== starts from here -->
+      <section class="users">
+        <p class="breadcrumb"><a href="#">Advanced</a> <a href="#">/ User</a>/Add User</p>
+
+        <div class="user-input">
+          <form action="#">
+            <input type="text" class="custom-input" placeholder="Name *">
+            <select class="select-input" name="rule" id="">
+              <option value="rule">Rule</option>
+              <option value="rule">Rule</option>
+              <option value="rule">Rule</option>
+              <option value="rule">Rule</option>
+              <option value="rule">Rule</option>
+              <option value="rule">Rule</option>
+            </select>
+            <input type="email" class="custom-input" placeholder="Email *">
+            <input type="password" class="custom-input" placeholder="Password *">
+            <input type="password" class="custom-input" placeholder="Confirm Password *">
+            <div class="d-flex justify-content-end pt-3 pt-md-5">
+              <button class="btn cancel-button">Cancel</button>
+              <button type="sumbit" class="btn add-button">Add</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- all codes for ===***users***=== ended -->
+    </main>
+  </div>
+
+  <!-- all scripts are starts from here -->
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <!-- .........script ended............. -->
+</body>
+
+</html>
