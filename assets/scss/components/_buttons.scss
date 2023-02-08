@@ -62,3 +62,20 @@
         border: 1px solid #A61C10;
     }
 }
+
+.category-button {
+    color: #fff;
+    border: 0px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    font-size: 20px;
+    min-width: 90px;
+    padding: 5px 10px;
+    background: #371901;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+
+    &:hover {
+        border: 1px solid #A61C10;
+    }
+}
