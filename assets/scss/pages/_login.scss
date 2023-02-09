@@ -23,6 +23,11 @@
             border: 1px solid #DF9C5F;
             border-radius: 20px;
             height: 64px;
+            border-right: none;
+
+            &:focus {
+                box-shadow: none;
+            }
         }
     }
 }

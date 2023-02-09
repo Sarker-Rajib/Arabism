@@ -562,6 +562,14 @@ body {
   font-weight: 500;
   font-size: 20px;
 }
+.confirmation-modal .modal .modal-dialog .modal-content .custom-input {
+  width: 100%;
+  padding: 18px;
+  margin-block: 8px;
+  background: #FDF3D0;
+  border: 1.5px solid rgba(55, 25, 0, 0.3);
+  border-radius: 6px;
+}
 
 /*===// end of components css === */
 /*=== pages css start === */
@@ -589,6 +597,10 @@ body {
   border: 1px solid #DF9C5F;
   border-radius: 20px;
   height: 64px;
+  border-right: none;
+}
+.login .login-form .input-custom:focus {
+  box-shadow: none;
 }
 
 /*===// end of pages css === *//*# sourceMappingURL=style.css.map */
