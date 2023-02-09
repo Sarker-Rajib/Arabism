@@ -66,7 +66,7 @@
         <a class="nav-links" href="customer-advanced.html"><span><i class="fas fa-users"></i></span>Customer</a>
         <a class="nav-links active" href="Product.html"><span><i class="far fa-cube"></i></span>Products</a>
         <a class="nav-links" href="categories.html"><span><i class="far fa-cube"></i></span>Category</a>
-        <a class="nav-links" href="#"><span><i class="far fa-cube"></i></span>Order</a>
+        <a class="nav-links" href="orders.html"><span><i class="far fa-cube"></i></span>Order</a>
 
       </div>
     </aside>
@@ -84,12 +84,93 @@
           </form>
         </div>
 
-        <div class="right d-flex align-items-center">
-          <span class="me-3 position-relative">
-            <i class="bell fal fa-bell me"></i>
-            <img src="assets/images/dot.png" alt="" class="img-fluid dot">
-          </span>
-          <img src="assets/images/Photo.png" alt="avatar">
+        <div class="avatar-motification">
+          <div class="right d-flex align-items-center">
+            <!-- notification -->
+            <div class="dropdown">
+              <span class="me-3 position-relative btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bell fal fa-bell me"></i>
+                <img src="assets/images/dot.png" alt="" class="img-fluid dot">
+              </span>
+
+              <div class="dropdown-menu dropdown-menu-notification">
+                <div class="d-flex align-items-center justify-content-between p-3">
+                  <h5>NotiFication</h5>
+                  <a href="notifications-all.html">See all</a>
+                </div>
+                <div class="notess">
+                  <div class="d-flex align-items-center note-card p-3">
+                    <div class="me-2">
+                      <img src="assets/images/npp.png" alt="q" class="img-fluid flex-shrink-0">
+                    </div>
+                    <div class="text flex-1">
+                      <p class="m-0">Lorem, ipsum dolor sit amet elit. Sapiente, amet.</p>
+                      <div class="text-end">
+                        <span class="time">Today, 9.52pm</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center note-card p-3">
+                    <div class="me-2">
+                      <img src="assets/images/npp.png" alt="q" class="img-fluid flex-shrink-0">
+                    </div>
+                    <div class="text flex-1">
+                      <p class="m-0">Lorem, ipsum dolor sit amet elit. Sapiente, amet.</p>
+                      <div class="text-end">
+                        <span class="time">Today, 9.52pm</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center note-card p-3">
+                    <div class="me-2">
+                      <img src="assets/images/npp.png" alt="q" class="img-fluid flex-shrink-0">
+                    </div>
+                    <div class="text flex-1">
+                      <p class="m-0">Lorem, ipsum dolor sit amet elit. Sapiente, amet.</p>
+                      <div class="text-end">
+                        <span class="time">Today, 9.52pm</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center note-card p-3">
+                    <div class="me-2">
+                      <img src="assets/images/npp.png" alt="q" class="img-fluid flex-shrink-0">
+                    </div>
+                    <div class="text flex-1">
+                      <p class="m-0">Lorem, ipsum dolor sit amet elit. Sapiente, amet.</p>
+                      <div class="text-end">
+                        <span class="time">Today, 9.52pm</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center note-card p-3">
+                    <div class="me-2">
+                      <img src="assets/images/npp.png" alt="q" class="img-fluid flex-shrink-0">
+                    </div>
+                    <div class="text flex-1">
+                      <p class="m-0">Lorem, ipsum dolor sit amet elit. Sapiente, amet.</p>
+                      <div class="text-end">
+                        <span class="time">Today, 9.52pm</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- profile -->
+            <div class="dropdown">
+              <span class="me-3 position-relative btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="assets/images/Photo.png" alt="avatar">
+              </span>
+
+              <ul class="dropdown-menu dropdown-menu-profile">
+                <li><a href="edit-user.html"><i class="fas fa-user"></i> Edit Profile</a></li>
+                <li><a href="#"><i class="fas fa-sign-out"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <!-- all codes for ===***top-navbar***=== ended -->
@@ -122,31 +203,35 @@
                   <th>Created</th>
                   <th>Status</th>
                   <th>Category</th>
+                  <th>Date</th>
                   <th>Action</th>
                 </tr>
               </thead>
               <tbody class="table-body">
                 <tr>
-                  <td class="d-flex align-items-center">
+                  <td class="d-flex align-items-center text-nowrap">
                     <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
-                    <span class="name">Name of product</span>
+                    <span class="name me-1">Name of product</span>
                   </td>
                   <td>
                     <p class="date">01/05/2022</p>
                   </td>
                   <td>
-                    <select class="select-opt">
+                    <select class="select-opt p-1">
                       <option value="">Active</option>
                       <option value="">Active</option>
                     </select>
                   </td>
                   <td>
-                    <p class="email">
+                    <p class="email text-nowrap">
                       Name of Category
                     </p>
                   </td>
                   <td>
-                    <button class="btn button-blue">
+                    <div class="date">01/05/2023</div>
+                  </td>
+                  <td class="text-nowrap">
+                    <button class="btn button-blue ">
                       Edit
                     </button>
                     <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -158,26 +243,29 @@
                   <td class="blank"></td>
                 </tr>
                 <tr>
-                  <td class="d-flex align-items-center">
+                  <td class="d-flex align-items-center text-nowrap">
                     <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
-                    <span class="name">Name of product</span>
+                    <span class="name me-1">Name of product</span>
                   </td>
                   <td>
                     <p class="date">01/05/2022</p>
                   </td>
                   <td>
-                    <select class="select-opt">
+                    <select class="select-opt p-1">
                       <option value="">Active</option>
                       <option value="">Active</option>
                     </select>
                   </td>
                   <td>
-                    <p class="email">
+                    <p class="email text-nowrap">
                       Name of Category
                     </p>
                   </td>
                   <td>
-                    <button class="btn button-blue">
+                    <div class="date">01/05/2023</div>
+                  </td>
+                  <td class="text-nowrap">
+                    <button class="btn button-blue ">
                       Edit
                     </button>
                     <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -189,26 +277,29 @@
                   <td class="blank"></td>
                 </tr>
                 <tr>
-                  <td class="d-flex align-items-center">
+                  <td class="d-flex align-items-center text-nowrap">
                     <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
-                    <span class="name">Name of product</span>
+                    <span class="name me-1">Name of product</span>
                   </td>
                   <td>
                     <p class="date">01/05/2022</p>
                   </td>
                   <td>
-                    <select class="select-opt">
+                    <select class="select-opt p-1">
                       <option value="">Active</option>
                       <option value="">Active</option>
                     </select>
                   </td>
                   <td>
-                    <p class="email">
+                    <p class="email text-nowrap">
                       Name of Category
                     </p>
                   </td>
                   <td>
-                    <button class="btn button-blue">
+                    <div class="date">01/05/2023</div>
+                  </td>
+                  <td class="text-nowrap">
+                    <button class="btn button-blue ">
                       Edit
                     </button>
                     <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -220,26 +311,29 @@
                   <td class="blank"></td>
                 </tr>
                 <tr>
-                  <td class="d-flex align-items-center">
+                  <td class="d-flex align-items-center text-nowrap">
                     <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
-                    <span class="name">Name of product</span>
+                    <span class="name me-1">Name of product</span>
                   </td>
                   <td>
                     <p class="date">01/05/2022</p>
                   </td>
                   <td>
-                    <select class="select-opt">
+                    <select class="select-opt p-1">
                       <option value="">Active</option>
                       <option value="">Active</option>
                     </select>
                   </td>
                   <td>
-                    <p class="email">
+                    <p class="email text-nowrap">
                       Name of Category
                     </p>
                   </td>
                   <td>
-                    <button class="btn button-blue">
+                    <div class="date">01/05/2023</div>
+                  </td>
+                  <td class="text-nowrap">
+                    <button class="btn button-blue ">
                       Edit
                     </button>
                     <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -251,26 +345,29 @@
                   <td class="blank"></td>
                 </tr>
                 <tr>
-                  <td class="d-flex align-items-center">
+                  <td class="d-flex align-items-center text-nowrap">
                     <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
-                    <span class="name">Name of product</span>
+                    <span class="name me-1">Name of product</span>
                   </td>
                   <td>
                     <p class="date">01/05/2022</p>
                   </td>
                   <td>
-                    <select class="select-opt">
+                    <select class="select-opt p-1">
                       <option value="">Active</option>
                       <option value="">Active</option>
                     </select>
                   </td>
                   <td>
-                    <p class="email">
+                    <p class="email text-nowrap">
                       Name of Category
                     </p>
                   </td>
                   <td>
-                    <button class="btn button-blue">
+                    <div class="date">01/05/2023</div>
+                  </td>
+                  <td class="text-nowrap">
+                    <button class="btn button-blue ">
                       Edit
                     </button>
                     <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -282,26 +379,29 @@
                   <td class="blank"></td>
                 </tr>
                 <tr>
-                  <td class="d-flex align-items-center">
+                  <td class="d-flex align-items-center text-nowrap">
                     <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
-                    <span class="name">Name of product</span>
+                    <span class="name me-1">Name of product</span>
                   </td>
                   <td>
                     <p class="date">01/05/2022</p>
                   </td>
                   <td>
-                    <select class="select-opt">
+                    <select class="select-opt p-1">
                       <option value="">Active</option>
                       <option value="">Active</option>
                     </select>
                   </td>
                   <td>
-                    <p class="email">
+                    <p class="email text-nowrap">
                       Name of Category
                     </p>
                   </td>
                   <td>
-                    <button class="btn button-blue">
+                    <div class="date">01/05/2023</div>
+                  </td>
+                  <td class="text-nowrap">
+                    <button class="btn button-blue ">
                       Edit
                     </button>
                     <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -313,26 +413,29 @@
                   <td class="blank"></td>
                 </tr>
                 <tr>
-                  <td class="d-flex align-items-center">
+                  <td class="d-flex align-items-center text-nowrap">
                     <img src="assets/images/categ.png" alt="q" class=" me-2 img-fluid">
-                    <span class="name">Name of product</span>
+                    <span class="name me-1">Name of product</span>
                   </td>
                   <td>
                     <p class="date">01/05/2022</p>
                   </td>
                   <td>
-                    <select class="select-opt">
+                    <select class="select-opt p-1">
                       <option value="">Active</option>
                       <option value="">Active</option>
                     </select>
                   </td>
                   <td>
-                    <p class="email">
+                    <p class="email text-nowrap">
                       Name of Category
                     </p>
                   </td>
                   <td>
-                    <button class="btn button-blue">
+                    <div class="date">01/05/2023</div>
+                  </td>
+                  <td class="text-nowrap">
+                    <button class="btn button-blue ">
                       Edit
                     </button>
                     <button class="btn button-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -343,6 +446,7 @@
                 <tr>
                   <td class="blank"></td>
                 </tr>
+
               </tbody>
             </table>
           </div>
@@ -372,7 +476,7 @@
           <div class="modal-content">
             <div class="modal-body">
               <h4>
-                Are you sure You What to
+                Are you sure You want to
                 Remove this <span>Product</span> ?
               </h4>
               <br> <br>
