@@ -457,6 +457,27 @@ body {
   color: #fff;
   margin: 0 5px;
 }
+.inner-contents .user-input .dropdown .dropdown-toggle {
+  height: 120px;
+  width: 120px;
+}
+.inner-contents .user-input .dropdown .dropdown-toggle::after {
+  display: none;
+}
+.inner-contents .user-input .dropdown .dropdown-menu-profile {
+  padding: 15px;
+  background: #FFF2D2;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px 20px 20px 20px;
+}
+.inner-contents .user-input .dropdown .dropdown-menu-profile h6 {
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+}
+.inner-contents .user-input .dropdown .dropdown-menu-profile .btn-submit {
+  background: #000;
+  color: #fff;
+}
 .inner-contents .product-add-sections .add-header {
   background: #371901;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
